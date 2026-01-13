@@ -61,28 +61,30 @@ export default function Machines() {
               transition={{ duration: 0.4, delay: index * 0.1 }}
               className="rounded-lg border border-slate-200 bg-slate-50 overflow-hidden"
             >
+              <a href="https://wa.me/9181121720" className="">
+                <div className="w-full relative aspect-3/2">
+                  <Image
+                    src={machine.image}
+                    alt={machine.name}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="p-6">
+                  <h3 className="text-lg font-semibold text-slate-900">
+                    {machine.name}
+                  </h3>
+
+                  <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                    {machine.points.map((point) => (
+                      <li key={point}>• {point}</li>
+                    ))}
+                  </ul>
+                </div>
+              </a>
               {/* Image */}
-              <div className="w-full relative aspect-3/2">
-                <Image
-                  src={machine.image}
-                  alt={machine.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              {/* Content */}
-              <div className="p-6">
-                <h3 className="text-lg font-semibold text-slate-900">
-                  {machine.name}
-                </h3>
-
-                <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                  {machine.points.map((point) => (
-                    <li key={point}>• {point}</li>
-                  ))}
-                </ul>
-              </div>
             </motion.div>
           ))}
         </div>
