@@ -1,5 +1,6 @@
 import Header from "@/components/layout/Header";
 import About from "@/components/sections/AboutUs";
+import CTA from "@/components/sections/CTA";
 import Hero from "@/components/sections/Hero";
 import Machines from "@/components/sections/Machines";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
@@ -12,7 +13,7 @@ export default function Home() {
       <WhyChooseUs />
       <About />
       <Machines />
-      {/*<CTA /> */}
+      <CTA />
     </>
   );
 }

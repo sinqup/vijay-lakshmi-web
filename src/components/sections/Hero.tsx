@@ -50,7 +50,7 @@ export default function Hero() {
           >
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2  md:w-max gap-4">
               <a
-                href="tel:+910000000000"
+                href="tel:9181121720"
                 className="w-full justify-center inline-flex items-center gap-2 rounded-md bg-orange-500 px-6 py-3 font-medium text-white hover:bg-orange-600 transition"
               >
                 <Phone size={18} />
@@ -58,7 +58,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="https://wa.me/910000000000"
+                href="https://wa.me/9181121720"
                 target="_blank"
                 className="w-full justify-center inline-flex items-center gap-2 rounded-md bg-green-600 px-6 py-3 font-medium text-white hover:bg-green-700 transition"
               >
